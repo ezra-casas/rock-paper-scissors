@@ -6,11 +6,12 @@ const choices = ['rock', 'paper', 'scissors']
 function computerPlay(){
     return choices[Math.floor(Math.random() * choices.length)];
 }
+
 function game(playerChoice, computer){
     playerChoice = playerChoice.toLowerCase();
     if(playerChoice === computer){
         return 'Tie!';
-    }    
+    }  
     // Rock:
     if(playerChoice === 'rock'){
         if(computer === 'paper'){
@@ -37,6 +38,8 @@ function game(playerChoice, computer){
     }
 }
 
-for(let i = 0; i < 100; i++) {
-    console.log(game('ROCK', computerPlay()))
+
+for(let i = 1; i <= 5; i++){
+    let userInput = prompt('Please enter your choice');
+    console.log(`Round: ${i}: ${game(userInput, computerPlay())}`)
 }
