@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+.container{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: none;
+    width: 100px;
+}
